@@ -27,7 +27,6 @@ export const Add = () => {
 const onSubmitHandler = async (event) => {
     event.preventDefault();
 
-    // const url = "http://localhost:4000"
     const formData = new FormData();
     formData.append("name", data.name);
     formData.append("description", data.description);
@@ -35,7 +34,7 @@ const onSubmitHandler = async (event) => {
     formData.append("category", data.category);
     formData.append("image",image);
     try {
-      const response = await axios.post("http://localhost:4000/api/food/add",
+      const response = await axios.post("https://fooddeliverywebsite-7wha.onrender.com/api/food/add",
         formData
       );
       console.log(response);

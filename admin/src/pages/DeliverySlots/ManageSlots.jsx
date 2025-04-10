@@ -47,7 +47,7 @@ const ManageSlots = () => {
     //     }
     //   };
       const body = JSON.stringify(formData);
-      const res = await axios.post('http://localhost:4000/api/delivery-slots/',body, {headers:{token}});
+      const res = await axios.post('https://fooddeliverywebsite-7wha.onrender.com/api/delivery-slots/',body, {headers:{token}});
       console.log(res);
       setSuccess('Delivery slot created successfully');
       setFormData({ slotStart: '', slotEnd: '', maxOrders: 10 });

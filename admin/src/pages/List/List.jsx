@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 
 export const List = () => {
-  const url = "https://localhost:4000";
+  const url = "https://fooddeliverywebsite-7wha.onrender.com";
   const [list, setlist] = useState([]);
 
   const fetchList = async () => {

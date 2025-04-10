@@ -26,7 +26,6 @@ export const LoginPop = ({ setShowLogin }) => {
   const onLogin = async (event) => {
     event.preventDefault();
     try {
-      //   let url = "http://localhost:4000"
       let newUrl = url;
       if (currstate === "Login") {
         newUrl = `${newUrl}/api/user/login`;
